@@ -14,7 +14,7 @@ A starter template for building robust .NET microservices with the following fea
 
 ## **Folder Structure**
 
-### **1. MyMicroservice.API**
+### **1. DotnetCoreAPITemplate.API**
 - **Description**: The main entry point for the microservice, containing controllers, middleware, and configuration files.
 - **Key Files**:
   - **`Program.cs`**: Configures the application pipeline with middleware, Serilog, Swagger, and authentication.
@@ -24,7 +24,7 @@ A starter template for building robust .NET microservices with the following fea
     - Example: `ExceptionHandlingMiddleware.cs` for global exception handling.
   - **`Properties/launchSettings.json`**: Configures launch profiles for debugging.
 
-### **2. MyMicroservice.Application**
+### **2. DotnetCoreAPITemplate.Application**
 - **Description**: Contains business logic and interfaces for services.
 - **Subfolders**:
   - **`Interfaces/`**: Defines interfaces for services.
@@ -32,7 +32,7 @@ A starter template for building robust .NET microservices with the following fea
   - **`Services/`**: Implements business logic.
     - Example: `WeatherService.cs`.
 
-### **3. MyMicroservice.Infrastructure**
+### **3. DotnetCoreAPITemplate.Infrastructure**
 - **Description**: Manages data access and repositories.
 - **Subfolders**:
   - **`Repositories/`**: Implements database access logic.
@@ -40,7 +40,7 @@ A starter template for building robust .NET microservices with the following fea
   - **`DataFactory/`**: Handles database connection creation.
     - Example: `SqlConnectionFactory.cs`.
 
-### **4. MyMicroservice.Domain**
+### **4. DotnetCoreAPITemplate.Domain**
 - **Description**: Represents the domain layer with models and DTOs.
 - **Subfolders**:
   - **`Models/`**: Defines domain entities.
@@ -48,7 +48,7 @@ A starter template for building robust .NET microservices with the following fea
   - **`DTOs/`**: Contains request and response DTOs for API communication.
     - Example: `WeatherRequestDTO.cs`, `WeatherResponseDTO.cs`.
 
-### **5. MyMicroservice.Common**
+### **5. DotnetCoreAPITemplate.Common**
 - **Description**: Contains shared utilities, constants, and event handlers.
 - **Subfolders**:
   - **`Constants/`**: Holds reusable constants.
@@ -56,7 +56,7 @@ A starter template for building robust .NET microservices with the following fea
   - **`Utilities/`**: Helper methods for common operations.
     - Example: `JwtHelper.cs`.
 
-### **6. MyMicroservice.Tests**
+### **6. DotnetCoreAPITemplate.Tests**
 - **Description**: Unit tests for the microservice.
 - **Subfolders**:
   - **`TestHelpers/`**: Contains reusable mocks and helpers for testing.
@@ -177,7 +177,7 @@ A starter template for building robust .NET microservices with the following fea
 ### **2. Create a New Project**
 - Use the template with:
   ```bash
-  dotnet new mymicroservice -n YourProjectName
+  dotnet new DotnetCoreAPITemplate -n YourProjectName
   ```
 
 ---
@@ -186,7 +186,7 @@ A starter template for building robust .NET microservices with the following fea
 
 ### **Run the Application**
 ```bash
-dotnet run --project MyMicroservice.API
+dotnet run --project DotnetCoreAPITemplate.API
 ```
 
 ### **Run Tests**

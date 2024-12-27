@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.36" />
+    <PackageReference Include="Serilog" Version="4.2.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DotnetCoreAPITemplate.Application\DotnetCoreAPITemplate.Application.csproj" />
+    <ProjectReference Include="..\DotnetCoreAPITemplate.Domain\DotnetCoreAPITemplate.Domain.csproj" />
+    <ProjectReference Include="..\DotnetCoreAPITemplate.Common\DotnetCoreAPITemplate.Common.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,5 +1,4 @@
 # **DotnetCoreAPITemplate**
-# **Megxy Software Solution**
 
 A starter template for building robust .NET microservices with the following features:
 
